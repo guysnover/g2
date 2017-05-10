@@ -1,8 +1,5 @@
 /*
- * settings_default.h - default machine profile - Set for Shapeoko2
- * This file is part of the g2core project
- *
- * Copyright (c) 2012 - 2017 Alden S. Hart, Jr.
+ * copied from settings_default.h - default machine profile - Set for Shapeoko2
  *
  * This file ("the software") is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 as published by the
@@ -215,7 +212,7 @@
 #define M1_STEP_ANGLE               1.8                     // {1sa: degrees per step
 #endif
 #ifndef M1_TRAVEL_PER_REV
-#define M1_TRAVEL_PER_REV           1.25                    // {1tr:  1.25 is a typical value for a screw axis
+#define M1_TRAVEL_PER_REV           8                    // {1tr:  1.25 is a typical value for a screw axis
 #endif
 #ifndef M1_MICROSTEPS
 #define M1_MICROSTEPS               8                       // {1mi:  1,2,4,8,    16,32 (G2 ONLY)
@@ -241,7 +238,7 @@
 #define M2_STEP_ANGLE               1.8
 #endif
 #ifndef M2_TRAVEL_PER_REV
-#define M2_TRAVEL_PER_REV           40.00
+#define M2_TRAVEL_PER_REV           8
 #endif
 #ifndef M2_MICROSTEPS
 #define M2_MICROSTEPS               8
@@ -261,13 +258,13 @@
 
 // MOTOR 3
 #ifndef M3_MOTOR_MAP
-#define M3_MOTOR_MAP                AXIS_Z
+#define M3_MOTOR_MAP                AXIS_Y
 #endif
 #ifndef M3_STEP_ANGLE
 #define M3_STEP_ANGLE               1.8
 #endif
 #ifndef M3_TRAVEL_PER_REV
-#define M3_TRAVEL_PER_REV           1.25                    // 1.25 is a typical value for a screw axis
+#define M3_TRAVEL_PER_REV           8                    // 1.25 is a typical value for a screw axis
 #endif
 #ifndef M3_MICROSTEPS
 #define M3_MICROSTEPS               8
@@ -276,7 +273,7 @@
 #define M3_STEPS_PER_UNIT           0
 #endif
 #ifndef M3_POLARITY
-#define M3_POLARITY                 1
+#define M3_POLARITY                 0
 #endif
 #ifndef M3_POWER_MODE
 #define M3_POWER_MODE               MOTOR_DISABLED
@@ -287,13 +284,13 @@
 
 // MOTOR 4
 #ifndef M4_MOTOR_MAP
-#define M4_MOTOR_MAP                AXIS_A
+#define M4_MOTOR_MAP                AXIS_Z
 #endif
 #ifndef M4_STEP_ANGLE
 #define M4_STEP_ANGLE               1.8
 #endif
 #ifndef M4_TRAVEL_PER_REV
-#define M4_TRAVEL_PER_REV           360.0                   // in degrees if rotary axis (ABC)
+#define M4_TRAVEL_PER_REV           0                   // in degrees if rotary axis (ABC)
 #endif
 #ifndef M4_MICROSTEPS
 #define M4_MICROSTEPS               8
