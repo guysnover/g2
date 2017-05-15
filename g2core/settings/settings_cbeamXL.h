@@ -290,7 +290,7 @@
 #define M4_STEP_ANGLE               1.8
 #endif
 #ifndef M4_TRAVEL_PER_REV
-#define M4_TRAVEL_PER_REV           0                   // in degrees if rotary axis (ABC)
+#define M4_TRAVEL_PER_REV           8                   // in degrees if rotary axis (ABC)
 #endif
 #ifndef M4_MICROSTEPS
 #define M4_MICROSTEPS               8
@@ -366,7 +366,7 @@
 
 // X AXIS
 #ifndef X_AXIS_MODE
-#define X_AXIS_MODE                 AXIS_DISABLED           // {xam:  see canonical_machine.h cmAxisMode for valid values
+#define X_AXIS_MODE                 AXIS_STANDARD           // {xam:  see canonical_machine.h cmAxisMode for valid values
 #endif
 #ifndef X_VELOCITY_MAX
 #define X_VELOCITY_MAX              1000.0                  // {xvm:  G0 max velocity in mm/min
@@ -407,7 +407,7 @@
 
 // Y AXIS
 #ifndef Y_AXIS_MODE
-#define Y_AXIS_MODE                 AXIS_DISABLED
+#define Y_AXIS_MODE                 AXIS_STANDARD
 #endif
 #ifndef Y_VELOCITY_MAX
 #define Y_VELOCITY_MAX              1000.0
@@ -448,7 +448,7 @@
 
 // Z AXIS
 #ifndef Z_AXIS_MODE
-#define Z_AXIS_MODE                 AXIS_DISABLED
+#define Z_AXIS_MODE                 AXIS_STANDARD
 #endif
 #ifndef Z_VELOCITY_MAX
 #define Z_VELOCITY_MAX              1000.0
@@ -676,7 +676,7 @@
 
 // Xmin on v9 board
 #ifndef DI1_MODE
-#define DI1_MODE                    IO_ACTIVE_LOW     // Normally open
+#define DI1_MODE                    IO_ACTIVE_HIGH    // Normally open
 #endif
 #ifndef DI1_ACTION
 #define DI1_ACTION                  INPUT_ACTION_NONE
@@ -687,7 +687,7 @@
 
 // Xmax
 #ifndef DI2_MODE
-#define DI2_MODE                    IO_ACTIVE_LOW     // Normally open
+#define DI2_MODE                    IO_ACTIVE_HIGH     // Normally open
 #endif
 #ifndef DI2_ACTION
 #define DI2_ACTION                  INPUT_ACTION_NONE
@@ -698,7 +698,7 @@
 
 // Ymin
 #ifndef DI3_MODE
-#define DI3_MODE                    IO_ACTIVE_LOW     // Normally open
+#define DI3_MODE                    IO_ACTIVE_HIGH    // Normally open
 #endif
 #ifndef DI3_ACTION
 #define DI3_ACTION                  INPUT_ACTION_NONE
@@ -709,7 +709,7 @@
 
 // Ymax
 #ifndef DI4_MODE
-#define DI4_MODE                    IO_ACTIVE_LOW     // Normally open
+#define DI4_MODE                    IO_ACTIVE_HIGH    // Normally open
 #endif
 #ifndef DI4_ACTION
 #define DI4_ACTION                  INPUT_ACTION_NONE
@@ -720,7 +720,7 @@
 
 // Zmin
 #ifndef DI5_MODE
-#define DI5_MODE                    IO_ACTIVE_LOW     // Normally open
+#define DI5_MODE                    IO_MODE_DISABLED   // Normally open
 #endif
 #ifndef DI5_ACTION
 #define DI5_ACTION                  INPUT_ACTION_NONE
@@ -731,7 +731,7 @@
 
 // Zmax
 #ifndef DI6_MODE
-#define DI6_MODE                    IO_ACTIVE_LOW     // Normally open
+#define DI6_MODE                    IO_ACTIVE_HIGH     // Normally open
 #endif
 #ifndef DI6_ACTION
 #define DI6_ACTION                  INPUT_ACTION_NONE
