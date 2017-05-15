@@ -1,4 +1,4 @@
-/*
+/* CBEAM XL settings
  * copied from settings_default.h - default machine profile - Set for Shapeoko2
  *
  * This file ("the software") is free software: you can redistribute it and/or modify
