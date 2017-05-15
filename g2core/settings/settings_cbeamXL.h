@@ -366,7 +366,7 @@
 
 // X AXIS
 #ifndef X_AXIS_MODE
-#define X_AXIS_MODE                 AXIS_STANDARD           // {xam:  see canonical_machine.h cmAxisMode for valid values
+#define X_AXIS_MODE                 AXIS_DISABLED          // {xam:  see canonical_machine.h cmAxisMode for valid values
 #endif
 #ifndef X_VELOCITY_MAX
 #define X_VELOCITY_MAX              1000.0                  // {xvm:  G0 max velocity in mm/min
@@ -407,7 +407,7 @@
 
 // Y AXIS
 #ifndef Y_AXIS_MODE
-#define Y_AXIS_MODE                 AXIS_STANDARD
+#define Y_AXIS_MODE                 AXIS_DISABLED
 #endif
 #ifndef Y_VELOCITY_MAX
 #define Y_VELOCITY_MAX              1000.0
@@ -448,7 +448,7 @@
 
 // Z AXIS
 #ifndef Z_AXIS_MODE
-#define Z_AXIS_MODE                 AXIS_STANDARD
+#define Z_AXIS_MODE                 AXIS_DISABLED
 #endif
 #ifndef Z_VELOCITY_MAX
 #define Z_VELOCITY_MAX              1000.0
